@@ -32,7 +32,7 @@ const transactionsSlice = createSlice({
     },
     deleteTransaction: (state, action) => {
       const { category, id } = action.payload;
-      state[category].filter((transaction) => transaction.id != id);
+      state[category].filter((transaction) => transaction.id !== id);
     }
   }
 })
